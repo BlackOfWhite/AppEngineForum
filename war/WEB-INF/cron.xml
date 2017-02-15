@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cronentries>
+  <cron>
+    <url>/notifications</url>
+    <description>Event notification every 24 hours</description>
+    <schedule>every 24 hours</schedule>
+  </cron>
+</cronentries>

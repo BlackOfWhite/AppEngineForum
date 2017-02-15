@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+	<servlet>
+		<servlet-name>CreateEvent</servlet-name>
+		<servlet-class>com.tar.project.event.manager.servlets.ServletCreateEvent</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>RemoveEvent</servlet-name>
+		<servlet-class>com.tar.project.event.manager.servlets.ServletRemoveEvent</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>RemoveEventParticipant</servlet-name>
+		<servlet-class>com.tar.project.event.manager.servlets.ServletRemoveEventParticipant</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>AddEventParticipant</servlet-name>
+		<servlet-class>com.tar.project.event.manager.servlets.ServletAddEventParticipant</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Notifications</servlet-name>
+		<servlet-class>com.tar.project.event.manager.servlets.ServletNotifications</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>RemoveEvent</servlet-name>
+		<url-pattern>/removeEvent</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RemoveEventParticipant</servlet-name>
+		<url-pattern>/removeEventParticipant</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CreateEvent</servlet-name>
+		<url-pattern>/createEvent</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AddEventParticipant</servlet-name>
+		<url-pattern>/addEventParticipant</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Notifications</servlet-name>
+		<url-pattern>/notifications</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>MainView.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
